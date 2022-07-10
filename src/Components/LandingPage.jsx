@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { motion } from "framer-motion";
-export const LandingPage = () => {
+export const LandingPage = ({setModal}) => {
     return (
         <div className='flex flex-col px-16'>
             <div className='flex flex-row justify-between pt-10 pb-20 text-xl'>
@@ -14,7 +14,7 @@ export const LandingPage = () => {
                 </div>
                 <div>
                     <div className='flex flex-row space-x-4'>
-                        <div className='bg-black text-white px-6 py-2 w-fit rounded-xl'>My Account</div>
+                        <div className='bg-black text-white px-6 py-2 w-fit rounded-xl cursor-pointer' onClick={()=>{setModal(true)}}>My Account</div>
                     </div>
                 </div>
             </div>
