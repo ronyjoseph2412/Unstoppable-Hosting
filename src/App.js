@@ -5,7 +5,7 @@ import { LandingPage } from "./Components/LandingPage";
 
 const uauth = new UAuth({
   clientID: "58f1804f-8131-4090-a648-a44139c16587",
-  redirectUri: "http://localhost:3000/login",
+  redirectUri: "https://unstoppable-decentralized-cloud.on.fleek.co/login",
   scope: "openid wallet",
 });
 
